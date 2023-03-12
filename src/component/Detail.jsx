@@ -28,15 +28,15 @@ const Detail = () => {
 
 export default Detail
 
-const StDetailBoxWrap = styled.div`
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  box-sizing: border-box;
-`
-const StDetailBox = styled.div`
-  margin: 0 auto;
-  margin-top: 50vh;
-  transform: translateY(-50%);
-  justify-content: center;
-`
+// const StDetailBoxWrap = styled.div`
+//   width: 100%;
+//   height: 100vh;
+//   overflow: hidden;
+//   box-sizing: border-box;
+// `
+// const StDetailBox = styled.div`
+//   margin: 0 auto;
+//   margin-top: 50vh;
+//   transform: translateY(-50%);
+//   justify-content: center;
+// `
