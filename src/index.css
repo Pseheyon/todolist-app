@@ -5,191 +5,125 @@ body {
   font-size: 1rem;
   background-color: aliceblue;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   width: 100%;
 }
+html,
+body,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
 li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
 ul {
   list-style: none;
 }
-
-input,
-button {
-  cursor: pointer;
+blockquote,
+q {
+  quotes: none;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-/* Nav */
-nav {
-  width: 80%;
-  margin: 2% auto 0 auto;
-  background-color: beige;
-  border-radius: 10px;
-  box-sizing: border-box;
-  overflow: hidden;
-  border: 2px solid gainsboro;
-  box-shadow: 5px 5px 15px lightblue;
-}
-nav span {
-  padding: 1% 0;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-}
-.todolist {
-  width: 60%;
-  margin-left: 3%;
-  height: 2vh;
-  padding: 1%;
-  border-radius: 30px;
-  border: 3px solid royalblue;
-}
-
-/* Btn */
-.btnWrap {
-  display: flex;
-  box-sizing: border-box;
-  overflow: hidden;
-  justify-content: flex-end;
-  align-items: center;
-  width: 40%;
-  padding: 3%;
-  gap: 3%;
-}
-button {
-  /* font-size:0.5vmin; */
-  font-size: 1rem;
-  padding: 0 3%;
-  height: 5vh;
-  border-radius: 20px;
-  color: white;
-  background-color: cornflowerblue;
-  border: none;
-  border: 3px solid royalblue;
-  display: block;
-  text-decoration: none;
-}
-
-/* Btn hover*/
-button:hover {
-  background-color: aliceblue;
-  color: royalblue;
-  transition: 0.3s;
-  font-weight: bolder;
-  display: block;
-  scale: 1.1;
-}
-
-/* list */
-.listWrap {
-  background-color: whitesmoke;
-  width: 80%;
-  margin: 1% auto 0;
-  overflow: hidden;
-  box-sizing: border-box;
-  box-shadow: 5px 5px 15px lightblue;
-  border-radius: 5px;
-  padding: 1% 2.5%;
-}
-.list span {
-  display: flex;
-  align-items: center;
-}
-
-.list {
-  width: 100%;
-  flex: 1;
-  font-size: 1rem;
-}
-.list,
-.todolist {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1%;
-}
-.list {
-  border-bottom: 1px dashed gray;
-}
-
-.listWrap > .isClicked > .btnWrap {
-  text-decoration: none;
-}
-
-@media screen and (min-width: 341px) and (max-width: 1024px) {
-  button {
-    height: 4vh;
-    font-size: 0.5rem;
-    border: 2px solid royalblue;
-    text-decoration: none;
-  }
-  .todolist {
-    width: 60%;
-    height: 2vh;
-    font-size: 0.5rem;
-    border: 2px solid royalblue;
-    padding-left: 1%;
-  }
-
-  .list {
-    width: 100%;
-    flex: 1;
-    font-size: 0.8rem;
-  }
-  .isClicked {
-    background-color: lightgray;
-    transition: all 0.3s;
-  }
-  /* .isClicked {
-    text-decoration: line-through;
-  } */
-}
-.isClicked:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
-  position: absolute;
-  display: block;
-  width: 50%;
-  border-bottom: 1px solid black;
-  transition: all 0.3s;
+  content: none;
 }
-.listWrap .isClicked .btnWrap {
-  text-decoration: none;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-@media all and (max-width: 340px) {
-  button {
-    height: 2.3vh;
-    font-size: 0.5rem;
-    border: 2px solid royalblue;
-    text-decoration: none;
-  }
-  .todolist {
-    width: 50%;
-    height: 2vh;
-    font-size: 0.3rem;
-    padding: 0 1%;
-    border: 2px solid royalblue;
-    padding-left: 1%;
-  }
-  .list {
-    width: 100%;
-    flex: 1;
-    font-size: 0.3rem;
-  }
-}
-.listWrap .isClicked .btnWrap {
-  text-decoration: none;
-}
+
+a{text-decoration: none;}
